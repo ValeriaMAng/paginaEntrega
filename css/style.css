@@ -1,0 +1,292 @@
+body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topbar{
+    background-color: #c56230;
+    height: 70px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.row-topbar{
+    height: 100%;
+}
+
+.col-izq{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+.col-der{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 50px;
+}
+
+.text-der {
+    margin-right: 20px;
+    margin-top: 2px;
+    border-right: #ffffff solid 1px;
+    padding-right: 20px;
+}
+
+.lista-iconos{
+    gap: 15px;
+}
+
+.header{
+    background-color: white;
+    font-size: 14px;
+    font-weight: 300;
+    color: #c56230;
+}
+
+.row-header{
+    height: 100%;
+}
+
+.header__logo{
+    height: 15vh;
+    margin-left: 15px;
+}
+
+.col-logo{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .header__logo{
+        height: 15vh;
+        align-items: center;
+    }
+
+    .col-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.col-nav a{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c56230;
+}
+
+.list-nav {
+    gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .list-nav {
+        gap: 50px;
+    }
+}
+
+.index-view{
+    max-width: 68%;
+    display: block;
+    margin: auto;
+}
+
+.site-footer{
+    padding: 10vh 0;
+    background: #E2B197;
+    display: flexbox;
+}
+
+.row-footer {
+    width: 100%;
+}
+
+.col-izq-footer{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.col-cen-footer{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .col-cen-footer{
+        margin-top: 30px;
+    }
+
+    .col-nav-footer{
+        margin-top: 30px;
+    }
+}
+
+.col-nav-footer{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.text-footer{
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #c56230;
+}
+
+.text__h4{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #c56230;
+}
+
+.list-nav-footer a{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c56230;
+    margin-bottom: 10px;
+}
+
+.main-quiensoy{
+    height: 95vh;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+row-main{
+    height: 100%;
+}
+
+.main-foto{
+    margin: auto;
+    width: 500px;
+}
+
+.col-foto{
+    display: flexbox;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+.col-text{
+    display: flexbox;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #c56230;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-foto{
+        width: 350px;
+    }
+
+    .col-foto{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-text{
+        margin-top: 10px;
+    }
+}
+
+.catalogo{
+    box-sizing: border-box;
+    height: 738px;
+    background: #F5EBE0;
+    border: 1px solid #F5EBE0;
+    text-align: center;
+}
+
+.blog{
+    box-sizing: border-box;
+    height: 600px;
+    background: #F5EBE0;
+    border: 1px solid #F5EBE0;
+}
+
+.reseña{
+    box-sizing: border-box;
+    height: 867px;
+    background: #F5EBE0;
+    border: 1px solid  #F5EBE0;
+}
+
+.contacto{
+    box-sizing: border-box;
+    height: 867px;
+    background: #F5EBE0;
+    border: 1px solid #F5EBE0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #232323;
+    margin-top: 75px;
+}
+
+.catalogo__productos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.productos {
+    width: 280px;
+    background-color: #F5EBE0;
+    color: black;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+
+.productos button {
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #f4C4B6;
+}
+
+.productos img {
+    width: 240px;
+    display: block;
+    margin: auto;
+}
