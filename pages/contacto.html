@@ -18,11 +18,11 @@
     <!--Header del Sitio-->
     <header class="site-header">
         <section class="container-fluid topbar">
-            <div class="row align-items-center justify-content-between row-topbar">
-                <div class="col col-izq">
+            <div class="row align-items-center justify-content-between row-height">
+                <div class="col class-col">
                     <span>ENVÍOS A TODA LA REPÚBLICA MEXICANA</span>
                 </div>
-                <div class="col-8 d-flex d-none d-md-flex justify-content-end col-der">
+                <div class="col-8 d-flex d-none d-md-flex justify-content-end class-col">
                     <div class="text-der">
                         <span>100% ARTESANAL</span>
                     </div>
@@ -50,7 +50,7 @@
         </section>
 
         <div class="container-fluid header">
-            <div class="row no-gutters align-items-center row-header">
+            <div class="row no-gutters align-items-center row-height">
                 <div class="col-sm-12 col-lg-2 col-logo">
                     <a href="../index.html">
                         <img class="header__logo" src="../img/logo.png" alt="Logo">
@@ -62,7 +62,6 @@
                             <li> <a href="../pages/quiensoy.html"  class="enlaces">QUIÉN SOY</a> </li>
                             <li> <a href="../pages/catalogo.html"  class="enlaces">CATÁLOGO</a></li>
                             <li> <a href="../pages/blog.html"  class="enlaces">BLOG</a></li>
-                            <li> <a href="../pages/reseña.html"  class="enlaces">RESEÑAS</a></li>
                             <li> <a href="../pages/contacto.html"  class="enlaces">CONTACTO</a></li>
                         </ul>
                     </nav>
@@ -73,66 +72,83 @@
 
     <!--Contenido del Sitio-->
     <main>
-        <section class="contacto">
-            <h2>Formulario de Contacto</h2>
+        <section class="container mb-5">
+                <div class="row d-flex align-items-center row-height">
+                    <div class="col-sm-12 col-lg-5 d-flex justify-content-end col-foto">
+                        <img class="main-foto" src="../img/foto14.jpeg" alt="Contacto">
+                    </div>
+                    <div class="col-sm-12 col-lg-7 col-text text-center">
+                        <h2>Formulario de Contacto</h2>
 
-            <form>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" required placeholder>
+                        <form>
+                            <div>
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" id="nombre" required placeholder class="form-control">
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" id="apellido" required placeholder class="form-control">
+                            </div>
+
+
+                            <div class="mt-3">
+                                <label for="dni" class="form-label">E-mail</label>
+                                <input type="number" id="email" required class="form-control">
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" id="telefono" class="form-control">
+                            </div>
+
+                            <div class="mt-3">
+                                <p>Género:</p>
+
+                                <div class="form-check form-check-inline">
+                                    <label for="masc" class="form-check-label">Masculino</label>
+                                    <input type="radio" name="genero" id="masc" class="form-check-input">
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <label for="fem" class="form-check-label">Femenino</label>
+                                    <input type="radio" name="genero" id="fem" class="form-check-input">
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <label for="nb" class="form-check-label">No binario</label>
+                                    <input type="radio" name="genero" id="nb" class="form-check-input">
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <label for="no-decir" class="form-check-label">Prefiero no decirlo</label>
+                                    <input type="radio" name="genero" id="no-decir" class="form-check-input">
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="asunto-usuario" class="form-label">Selecciona un asunto</label>
+                                <select name="asunto-usuario" id="asunto-usuario" class="form-select">
+                                    <option value="mensaje">Mensaje</option>
+                                    <option value="consulta">Cotización</option>
+                                    <option value="reclamo">Compra</option>
+                                </select>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="mensaje" class="form-label">Déjanos tu mensaje</label>
+                                <textarea id="mensaje" cols="20" rows="5" placeholder="Escribe tu mensaje" class="form-control"></textarea>
+                            </div>
+
+                            <div>
+                                <div class="col-auto mt-3">
+                                    <button type="submit" class="btn btn-primary button_form">Enviar formulario</button>
+                                    <button type="reset" class="btn btn-outline-danger">Limpiar el formulario</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" required placeholder>
-                </div>
-
-
-                <div>
-                    <label for="dni">E-mail</label>
-                    <input type="number" id="email" required>
-                </div>
-
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono">
-                </div>
-
-                <div>
-                    <p>Género:</p>
-
-                    <label for="masc">Masculino</label>
-                    <input type="radio" name="genero" id="masc">
-
-                    <label for="fem">Femenino</label>
-                    <input type="radio" name="genero" id="fem">
-
-                    <label for="nb">No binario</label>
-                    <input type="radio" name="genero" id="nb">
-
-                    <label for="no-decir">Prefiero no decirlo</label>
-                    <input type="radio" name="genero" id="no-decir">
-                </div>
-
-                <div>
-                    <label for="">Selecciona un asunto</label>
-                    <select name="asunto-usuario" id="asunto-usuario">
-                        <option value="mensaje">Mensaje</option>
-                        <option value="consulta">Cotización</option>
-                        <option value="reclamo">Compra</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="mensaje">Dejanos tu mensaje</label>
-                    <textarea id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Limpiar el formulario">
-                </div>
-            </form>
         </section>
     </main>
 
@@ -140,7 +156,7 @@
     <footer class="site-footer">
         <div class="container-fluid">
             <div class="row d-flex justify-content-center align-items-top row-footer">
-                <div class="col-sm-12 col-lg-4 col-izq-footer">
+                <div class="col-sm-12 col-lg-4 class-col-footer">
                     <div class="text-footer">
                         <b>Natural Style</b> es un mundo de amigurumis<br>
                         que te lleva una increíble experiencia única,<br>
@@ -152,7 +168,7 @@
                         para cualquier ocasión especial.<br> ¡Cotiza tu personaje con nosotros!
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4 col-cen-footer">
+                <div class="col-sm-12 col-lg-4 class-col-footer">
                     <div class="text-footer">
                         <h4 class="text__h4">CONTACTO</h4>
                         <b>Horario de atención:</b>
@@ -166,7 +182,7 @@
                         y envíos a todo México.
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4 col-nav-footer">
+                <div class="col-sm-12 col-lg-4 class-col-footer">
                     <div class="text-footer">
                         <h4 class="text__h4">TIENDA</h4>
                         <nav>
@@ -174,7 +190,6 @@
                                 <li> <a href="../pages/quiensoy.html"  class="enlaces">QUIÉN SOY</a> </li><br>
                                 <li> <a href="../pages/catalogo.html"  class="enlaces">CATÁLOGO</a></li><br>
                                 <li> <a href="../pages/blog.html"  class="enlaces">BLOG</a></li><br>
-                                <li> <a href="../pages/reseña.html"  class="enlaces">RESEÑAS</a></li><br>
                                 <li> <a href="../pages/contacto.html"  class="enlaces">CONTACTO</a></li>
                             </ul>
                         </nav>

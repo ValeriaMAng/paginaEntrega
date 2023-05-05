@@ -1,0 +1,281 @@
+$naranja-fuerte: #c56230;
+$naranja-claro: #E2B197;
+$beige: #F5EBE0;
+
+body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topbar{
+    background-color: $naranja-fuerte;
+    height: 70px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.row-height{
+    height: 100%;
+}
+
+.class-col{
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+.text-der {
+    margin-right: 20px;
+    margin-top: 2px;
+    border-right: #ffffff solid 1px;
+    padding-right: 20px;
+}
+
+.lista-iconos{
+    gap: 15px;
+}
+
+.header{
+    background-color: white;
+    font-size: 14px;
+    font-weight: 300;
+    color: $naranja-fuerte;
+}
+
+.header__logo{
+    height: 15vh;
+    margin-left: 15px;
+}
+
+.col-logo{
+    align-items: center;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .header__logo{
+        height: 15vh;
+        align-items: center;
+    }
+
+    .col-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.col-nav a{
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    color: $naranja-fuerte;
+}
+
+.list-nav {
+    gap: 10px;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .list-nav {
+        gap: 50px;
+        justify-content: left;
+    }
+}
+
+.index-view{
+    max-width: 68%;
+    display: block;
+    margin: auto;
+}
+
+.site-footer{
+    padding: 10vh 0;
+    background: $naranja-claro;
+}
+
+.row-footer {
+    width: 100%;
+}
+
+.class-col-footer{
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .col-cen-footer{
+        margin-top: 30px;
+    }
+
+    .col-nav-footer{
+        margin-top: 30px;
+    }
+}
+
+%base-text {
+    box-sizing: border-box;
+    text-align: center;
+    color: $naranja-fuerte;
+}
+
+.text-footer{
+    font-size: 14px;
+    font-weight: 400;
+    @extend %base-text;
+}
+
+.text__h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    @extend %base-text;
+}
+
+.list-nav-footer a{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    @extend %base-text;
+}
+
+.col-text{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 70px;
+    @extend %base-text;
+}
+
+.pages{
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    @extend %base-text;
+}
+
+.main-quiensoy{
+    height: 95vh;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.main-foto{
+    margin: auto;
+    width: 500px;
+}
+
+.col-foto{
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .main-foto{
+        width: 350px;
+    }
+
+    .col-foto{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-text{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+    .pages{
+        margin-bottom: 50px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        @extend %base-text;
+    }
+}
+
+
+.catalogo__productos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.blog__col {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.productos {
+    width: 280px;
+    background-color: $beige;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    color: $naranja-fuerte;
+}
+
+.publicaciones {
+    width: 550px;
+    max-width: 90vw;
+    background-color: $beige;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    color: $naranja-fuerte;
+}
+
+.productos button {
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: $naranja-claro;
+    font-size: 14px;
+    font-weight: 500;
+    color: $naranja-fuerte;
+}
+
+.productos img {
+    width: 240px;
+    display: block;
+    margin: auto;
+}
+
+.button_form {
+    background-color: $naranja-claro;
+    border-color: $naranja-claro;
+}

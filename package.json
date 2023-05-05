@@ -1,0 +1,19 @@
+{
+  "name": "preentrega3manjarrez",
+  "version": "1.0.0",
+  "description": "Mi preentrega",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeriaMAng/paginaEntrega.git"
+  },
+  "author": "Valeria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeriaMAng/paginaEntrega/issues"
+  },
+  "homepage": "https://github.com/ValeriaMAng/paginaEntrega#readme"
+}
